@@ -48,19 +48,22 @@ public class Tab1 extends Fragment implements OnMapReadyCallback, ConnectivityRe
 
     private RequestQueue mQueue;
     private ArrayList<Vehicle> listSuperHeroes;
-    ArrayList<String> worldlist;
-    Spinner mySpinner;
-    Button track;
-    CardView locationCard;
-    Double lat, lng;
-    String userName = null;
-    boolean click = true;
-    boolean fristClick = true;
-    TextView txtCar, txtTrain;
-    MapView mapView;
-    String getCar, getTrain;
-    GoogleMap map;
-    int spinnerPosition;
+    private ArrayList<String> worldlist;
+    private Spinner mySpinner;
+    private Button track;
+    private CardView locationCard;
+    private Double lat;
+    private Double lng;
+    private String userName = null;
+    private boolean click = true;
+    private boolean fristClick = true;
+    private TextView txtCar;
+    private TextView txtTrain;
+    private MapView mapView;
+    private String getCar;
+    private String getTrain;
+    private GoogleMap map;
+    private int spinnerPosition;
 
 
     @Override
@@ -288,10 +291,10 @@ public class Tab1 extends Fragment implements OnMapReadyCallback, ConnectivityRe
         }
     }
 
-    //Check Network Status
+    //Checking Network Status
 
     @Override
-    public void onNetworkConnectionChanged(boolean isConnected) {
+    public void onNetworkConnectionChanged() {
         InternetConnection.checkConnection(getActivity());
     }
 }

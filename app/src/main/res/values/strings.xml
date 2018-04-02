@@ -1,4 +1,13 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!--<string name="app_name">Inteliment Technologies</string>-->
-    <string name="maps_api_key">AIzaSyCiRMUK1_tRdynGD0TLKoAxN6CsjjraqFI</string>
+    <string name="maps_api_key" tools:keep="@string/maps_api_key">AIzaSyCiRMUK1_tRdynGD0TLKoAxN6CsjjraqFI</string>
+    <string name="desc">Image</string>
+    <string name="mode">Mode Of Transport  :</string>
+    <string name="car">Car</string>
+    <string name="train">Train</string>
+    <string name="slide_2_title">Tab 2</string>
+    <string name="slide_3_title">Tab 3</string>
+    <string name="slide_4_title">Tab 4</string>
+    <string name="slide_5_title">Tab 5</string>
+    <string name="track">Track My Location</string>
 </resources>

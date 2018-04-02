@@ -1,9 +1,7 @@
 package com.education.abhihasabe.intelimenttechnologies.adapter;
 
-import android.app.FragmentManager;
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,17 +15,17 @@ import com.education.abhihasabe.intelimenttechnologies.R;
  * Created by Abhi on 29-03-2018.
  */
 
-public class ViewPagerAdapter extends PagerAdapter {
-    Context context;
-    int images[];
-    LayoutInflater layoutInflater;
+class ViewPagerAdapter extends PagerAdapter {
+    private final Context context;
+    private final int[] images;
+    private final LayoutInflater layoutInflater;
 
-
-    public ViewPagerAdapter(Context context, int images[]) {
+    ViewPagerAdapter(Context context, int[] images, LayoutInflater layoutInflater) {
         this.context = context;
         this.images = images;
-        layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        this.layoutInflater = layoutInflater;
     }
+
 
     @Override
     public int getCount() {
