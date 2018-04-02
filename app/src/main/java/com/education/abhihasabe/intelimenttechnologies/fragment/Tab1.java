@@ -70,12 +70,12 @@ public class Tab1 extends Fragment implements OnMapReadyCallback, ConnectivityRe
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.tab1, container, false);
-        mySpinner = (Spinner) v.findViewById(R.id.my_spinner);
-        locationCard = (CardView) v.findViewById(R.id.locationCard);
-        track = (Button) v.findViewById(R.id.track);
-        txtCar = (TextView) v.findViewById(R.id.country);
-        txtTrain = (TextView) v.findViewById(R.id.population);
-        mapView = (MapView) v.findViewById(R.id.mapview);
+        mySpinner = v.findViewById(R.id.my_spinner);
+        locationCard = v.findViewById(R.id.locationCard);
+        track = v.findViewById(R.id.track);
+        txtCar = v.findViewById(R.id.country);
+        txtTrain = v.findViewById(R.id.population);
+        mapView = v.findViewById(R.id.mapview);
         mapView.onCreate(savedInstanceState);
         track.setOnClickListener(new View.OnClickListener() {
             @Override
